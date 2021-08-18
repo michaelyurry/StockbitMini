@@ -7,13 +7,14 @@ import com.yurry.stockbitmini.ui.chat.ChatFragment
 import com.yurry.stockbitmini.ui.portofolio.PortfolioFragment
 import com.yurry.stockbitmini.ui.search.SearchFragment
 import com.yurry.stockbitmini.ui.stream.StreamFragment
+import com.yurry.stockbitmini.ui.watchlist.WatchlistFragment
 
 class MainViewPagerAdapter(fragmentActivity: FragmentActivity):
     FragmentStateAdapter(fragmentActivity) {
 
     val homeMenuList by lazy {
         listOf(
-            MainFragment(),
+            WatchlistFragment(),
             StreamFragment(),
             SearchFragment(),
             ChatFragment(),

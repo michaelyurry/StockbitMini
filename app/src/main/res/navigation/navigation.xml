@@ -6,7 +6,8 @@
 
     <fragment
         android:id="@+id/navigation_splash"
-        android:name="com.yurry.stockbitmini.ui.splash.SplashFragment">
+        android:name="com.yurry.stockbitmini.ui.splash.SplashFragment"
+        android:label="@string/splash">
         <action
             android:id="@+id/action_navigation_splash_to_navigation_login"
             app:destination="@id/navigation_login" />
@@ -17,7 +18,8 @@
 
     <fragment
         android:id="@+id/navigation_main"
-        android:name="com.yurry.stockbitmini.ui.main.MainFragment">
+        android:name="com.yurry.stockbitmini.ui.main.MainFragment"
+        android:label="@string/main">
         <action
             android:id="@+id/action_navigation_main_to_navigation_login"
             app:destination="@id/navigation_login" />
@@ -25,7 +27,8 @@
 
     <fragment
         android:id="@+id/navigation_login"
-        android:name="com.yurry.stockbitmini.ui.login.LoginFragment">
+        android:name="com.yurry.stockbitmini.ui.login.LoginFragment"
+        android:label="@string/login">
         <action
             android:id="@+id/action_navigation_login_to_navigation_main"
             app:destination="@id/navigation_main" />
